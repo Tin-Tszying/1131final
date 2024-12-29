@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product</title>
+    <link rel="stylesheet" href="../css/product.css">
+    <script src="https://code.iconify.design/iconify-icon/2.2.0/iconify-icon.min.js"></script>
+</head>
+<body>
+      <!-- navbar -->
+      <header>
+      <a href="../index.html" class="logo" style="color: #e9f4e3;"><iconify-icon icon="game-icons:soap" width="20" height="20"  style="color: #e0e4d9"></iconify-icon></i>Uniersoap</a>
+         <!-- nav list -->
+            <ul class="navbar drop-down-menu">
+               <li><a href="../index.html" >Home</a></li>
+               <li><a href="../index.html">Categories</a>
+                  <ul>
+                        <li><a href="categories-Taiwan.html">Taiwan</a></li>
+                        <li><a href="categories-Japan.html">Japan</a></li>
+                        <li><a href="categories-Australia.html">Australia</a></li>
+                        <li><a href="#">Israel</a></li>
+                        <li><a href="#">Korea</a></li>
+                    </ul>
+               </li>
+               <li><a href="product.html" class="home-active">Products</a></li>
+               <li><a href="../index.html">About</a></li>
+               <li><a href="../index.html">Customers</a></li>
+               <!-- <li class="cart-icon" id="cart-icon">
+                  <iconify-icon icon="mdi-light:cart" width="24" height="24"></iconify-icon>
+                  <span id="cart-count">0</span>
+               </li> -->
+            </ul>
+            <div class="cart-icon" id="cart-icon">
+               <iconify-icon icon="mdi-light:cart" width="24" height="24"></iconify-icon>
+               <span id="cart-count">0</span>
+            </div>
+         </div>
+      </header>
+      <div class="cart-window" id="cart-window" style="display: none;">
+         <h2>Shopping Cart</h2>
+         <div id="cart-items"></div>
+         <p>Total：$<span id="total-price">0</span></p>
+         <button id="close-cart">Close</button>
+      </div>
+      
+      <section class="card">
+         <div class="products-container">
+            <div class="box">
+               <span class="data-order"></span>
+               <img class="img" src=""/>
+               <h2 class="product-name"></h2>
+               <h3 class="price"></h3>
+               <iconify-icon 
+                        icon="mdi-light:cart" 
+                        class="cart add-to-cart" 
+                        width="24" height="24"
+                        style="position: left;">
+               </iconify-icon>
+               
+            </div>
+         </div>
+      </section>
+</body>
+<script src="../js/product.js"></script>
+<script src="../js/categories.js"></script>
+<script src="../js/preview.js"></script>
+</html>

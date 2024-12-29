@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final</title>
+    <!-- link to css -->
+    <link rel="stylesheet" href="./css/final.css">
+    
+    <!-- icon -->
+    <script src="https://code.iconify.design/iconify-icon/2.2.0/iconify-icon.min.js"></script>
+</head>
+<body>
+    <!-- navbar -->
+    <header>
+        <a href="#" class="logo" style="color: #e9f4e3;"><iconify-icon icon="game-icons:soap" width="20" height="20"  style="color: #e0e4d9"></iconify-icon></i>Uniersoap</a>
+        <!-- nav list -->
+         <ul class="navbar drop-down-menu">
+            <li><a href="index.html" class="home-active">Home</a></li>
+            <li><a href="#categories">Categories</a>
+                <ul>
+                    <li><a href="./html/categories-Taiwan.html">Taiwan</a></li>
+                    <li><a href="./html/categories-Japan.html">Japan</a></li>
+                    <li><a href="./html/categories-Australia.html">Australia</a></li>
+                    <li><a href="#">Israel</a></li>
+                    <li><a href="#">Korea</a></li>
+                </ul>
+            </li>
+            <li><a href="./html/product.html">Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#customers">Customers</a></li>
+            <li><button class="loginbtn">Login</button></li>
+         </ul>
+    </header>
+    <article class="pagecontaineer">
+    <!-- LogIn -->
+    <section class="loginsec">
+        <div class="wrapper">
+            <span class="icon-close">
+                <iconify-icon icon="solar:close-circle-linear" width="24" height="24"  style="color: #64663d"></iconify-icon>
+            </span>
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><iconify-icon icon="mdi-light:email" width="20" height="20"  style="color: #162938"></iconify-icon></span>
+                        <input type="email" required >
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><iconify-icon icon="mdi-light:lock" width="20" height="20"  style="color: #162938"></iconify-icon></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remeber">
+                        <label><input type="checkbox">Remember me</label>
+                        <a href="#">Forget password?</a>
+                    </div>
+                    <button type="submit" class="submitbtn">Login</button>
+                    <div class="login-resgister">
+                        <p>Don't have an account?
+                        <a href="#" class="register-link">Register</a></p>
+                    </div>
+                </form>
+            </div>
+            <div class="form-box register">
+                <h2>Registration</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><iconify-icon icon="mdi:account" width="24" height="24"  style="color: #64663d"></iconify-icon></span>
+                        <input type="text" required >
+                        <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><iconify-icon icon="mdi-light:email" width="20" height="20"  style="color: #162938"></iconify-icon></span>
+                        <input type="email" required >
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><iconify-icon icon="mdi-light:lock" width="20" height="20"  style="color: #162938"></iconify-icon></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remeber">
+                        <label><input type="checkbox">I agree to the terms & conditions</label>
+                    </div>
+                    <button type="submit" class="submitbtn">Register</button>
+                    <div class="login-resgister">
+                        <p>Already have an account?
+                        <a href="#" class="login-link">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- slide -->
+    <section class="sli">
+        <div class="container">
+            <div class="slide fade">
+                <img src="image/page/p1.png">
+            </div>
+            <div class="slide fade">
+                <img src="image/page/p2.png">
+            </div>
+            <div class="slide fade">
+                <img src="image/page/p3.png">
+            </div>
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+    </section>
+    </article>
+    <!-- Categories -->
+    <section class="categories" id="categories">
+        <div class="heading">
+            <h1>Browse our hottest<br><span>Categories</h1>
+                <a href="./html/product.html" class="btn">see all</a>
+        </div>
+        <!-- container content -->
+        <div class="categories-container">
+            <!-- box1 -->
+            <div class="box">
+                <img src="image/soaps/Taiwan/TW1.png">
+                <h2>Taiwan</h2>
+            </div>
+            <!-- box2 -->
+            <div class="box">
+                <img src="image/soaps/Japan/JAP3.png" alt="">
+                <h2>Japan</h2>
+            </div>
+            <!-- box3 -->
+            <div class="box">
+                <img src="image/soaps/Australia/AST1.png" alt="">
+                <h2>Australia</h2>
+            </div>
+            <!-- box4 -->
+            <div class="box">
+                <img src="image/soaps/Israel/ISR2.png" alt="">
+                <h2>Israel</h2>
+            </div>
+            <!-- box5 -->
+            <div class="box">
+                <img src="image/soaps/Korea/KOR1.png" alt="">
+                <h2>Korea</h2>
+            </div>
+        </div>
+    </section>
+    <!-- about -->
+    <section class="about" id="about">
+        <img src="image/about.png" alt="">
+        <div class="about-text">
+            <span>About us</span>
+            <p>At Universoap, we curate a carefully selected range of premium soaps from around the world.Our store is more than just a place to buy soap—it’s a destination where you can explore an exquisite selection of handcrafted soaps made from natural ingredients sourced from various countries.</p>
+            <p>Explore our collection today, and discover the world of beauty that is Universoap!</p>
+            <a href="#" class="btn">learn more</i></a>
+        </div>
+    </section>
+    <!-- Customers -->
+    <section class="customers" id="customers">
+        <h2>why customers's love us?</h2>
+        <!-- customer content -->
+        <div class="customers-container">
+            <!-- review 1 -->
+            <div class="box">
+                <p>I love how they source products from different countries, making every purchase feel special and meaningful.</p>
+                <div class="review-profile">
+                    <span><iconify-icon icon="material-symbols:person-book" width="24" height="24"  style="color:rgb(255, 255, 255)"></iconify-icon></iconify-icon></span>
+                    <h3>Tsz Ying</h3>
+                </div>
+            </div>
+            <!-- review 2 -->
+            <div class="box">
+                <p>Universoap is my go-to for unique, high-quality soaps! The variety they offer is incredible!!!</p>
+                <div class="review-profile">
+                    <span><iconify-icon icon="material-symbols:person-book" width="24" height="24"  style="color: rgb(255, 255, 255)"></iconify-icon></span>
+                    <h3>Chia Yun</h3>
+                </div>
+            </div>
+            <!-- review 3 -->
+            <div class="box">
+                <p>it’s an experience that connects me to cultures from around the world. Highly recommend this place for soap lovers and gift shoppers alike!"</p>
+                <div class="review-profile">
+                    <span><iconify-icon icon="material-symbols:person-book" width="24" height="24"  style="color:rgb(255, 255, 255)"></iconify-icon></span>
+                    <h3>Xi Yu</h3>
+                </div>
+            </div>
+            <!-- review 4 -->
+            <div class="box">
+                <p>GIVE US FEEDBACK</p>
+                <div class="rewiewtext">
+                    <input type="text" required>
+                    <label>Username</label>
+                </div>
+                <div class="rewiewtext">
+                    <input type="text" required>
+                    <label>Review</label>
+                </div>
+                <div class="planets">
+                        <span class="planet"><iconify-icon icon="majesticons:planet-ring-2-line" width="24" height="24"  style="color: #64663d"></iconify-icon></iconify-icon></span>
+                        <span class="planet"><iconify-icon icon="majesticons:planet-ring-2-line" width="24" height="24"  style="color: #64663d"></iconify-icon></span>
+                        <span class="planet"><iconify-icon icon="majesticons:planet-ring-2-line" width="24" height="24"  style="color: #64663d"></iconify-icon></span>
+                        <span class="planet"><iconify-icon icon="majesticons:planet-ring-2-line" width="24" height="24"  style="color: #64663d"></iconify-icon></span>
+                        <span class="planet"><iconify-icon icon="majesticons:planet-ring-2-line" width="24" height="24"  style="color: #64663d"></iconify-icon></span>
+                </div>
+                <button class="done">Done</button>     
+            </div>
+        </div>
+    </section>
+    <!-- copyright -->
+    <div class="copyright">
+        <p>Universaop&#169;  contact us :02-83367898</p>
+     </div>
+</body>
+<!-- js -->
+<script src="./js/main.js"></script>
+</html>
